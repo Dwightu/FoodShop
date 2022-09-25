@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
+    "docker": "docker-compose -f docker-compose.yml up",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
