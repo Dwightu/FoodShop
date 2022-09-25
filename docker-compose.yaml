@@ -1,0 +1,22 @@
+version: '3'
+services:
+  server:
+  # it will search for docker file
+    build: ./backend
+    ports:
+      - '5000:5000'
+  mongo:
+    image: mongo:3.1
+    container_name: mongo-test
+    # restart: always
+    environment:
+      NODE_ENV: development
+      PORT: 5000
+      MONGO_URI: 'mongodb://localhost:27017/yelp-camp'
+      JWT_SECRET : 'abc123'
+      PAYPAL_CLIENT_ID : AcsGtW4SPdGffSZjeWAOaUy8zi28y7pL6bbMm0vQwlHseLUOfmjAQm3wTzZoHFlbxPBv_H1z6XoJM4rC
+    ports:
+      - 27017:27017
+# docker-compose up -d
+# The reason I run in docker that's because 
+# it's easy to tear down and clean up
