@@ -8,6 +8,9 @@ const Footer = () => {
         <Row>
           <Col className='text-center py-3 text-light'>Copyright &copy; FoodShop</Col>
         </Row>
+        <Row>
+          <Col className='text-center text-light mb-3'>2022 Dwight Yu</Col>
+        </Row>
       </Container>
     </footer>
   )
