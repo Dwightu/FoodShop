@@ -1,6 +1,7 @@
 # FoodShop eCommerce Platform
 
 > eCommerce platform built with the MERN stack & Redux.
+> https://foodstore-dehui.herokuapp.com/
 
 
 ## Usage
